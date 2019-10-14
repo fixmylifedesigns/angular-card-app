@@ -1,0 +1,30 @@
+div {
+  table {
+    thead {
+      tr {
+        .emailTr {
+          @media screen and (max-width: 860px) {
+            display: none;
+          }
+        }
+        .lastTr {
+          @media screen and (max-width: 470px) {
+            display: none;
+          }
+        }
+      }
+    }
+    tbody {
+      .emailTb {
+        @media screen and (max-width: 860px) {
+          display: none;
+        }
+      }
+      .lastTb {
+        @media screen and (max-width: 470px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

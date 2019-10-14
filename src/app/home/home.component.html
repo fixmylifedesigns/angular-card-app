@@ -1,0 +1,26 @@
+<div class="table-responsive">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col" class="lastTr">Last Name</th>
+        <th scope="col" class="emailTr">Email</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let people of people">
+      <tr class="thead-light table-light">
+        <th scope="row">{{ people.id }}</th>
+        <td>{{ people.first_name }}</td>
+        <td class="lastTb">{{ people.last_name }}</td>
+        <td class="emailTb">{{ people.email }}</td>
+        <td>
+          <a [routerLink]="['/person', people.id]">
+            View
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

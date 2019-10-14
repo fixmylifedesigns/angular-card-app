@@ -1,0 +1,31 @@
+div {
+  div {
+    form {
+      width:300px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.mobile {
+  table {
+    thead {
+      tr {
+        .cardTh {
+          @media screen and (max-width: 470px) {
+            display: none;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        .cardtd {
+          @media screen and (max-width: 470px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

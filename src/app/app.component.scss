@@ -1,0 +1,64 @@
+div {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: center;
+  z-index: 1;
+  @media screen and (max-width: 860px) {
+    flex-direction: column;
+    position: relative;
+  }
+  app-nav {
+    background: #007bff;
+    // width: 200px;
+    
+  }
+  section {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 2em;
+    // position: relative;
+    @media screen and (max-width: 860px) {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+  .gradient {
+    z-index: 0;
+    height: 100%;
+    background-image: linear-gradient(160deg, #09f 30%, #63f 80%);
+    transform: skew(0deg, -8deg);
+    position: fixed;
+    width: 100%;
+    @media screen and (max-width: 860px) {
+        display:none
+      }
+    .gradient-2 {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      right: 0;
+      height: 20%;
+      background-image: -webkit-gradient(
+        linear,
+        right top,
+        left top,
+        from(rgba(102, 51, 255, 0)),
+        to(rgba(102, 51, 255, 0.2))
+      );
+    }
+    .gradient-3 {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 30%;
+      background-image: linear-gradient(
+        270deg,
+        rgba(0, 153, 255, 0.2),
+        rgba(0, 153, 255, 0)
+      );
+    }
+  }
